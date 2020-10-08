@@ -8,17 +8,17 @@
         // 打印出0-100之间所有的质数
         for(var i=2;i<=100;i++){
             var flag=true;
-            
+            document.write(i)
             for(j=2;j<i;j++){
               if (i%j==0) {
                   flag=false
+              }
+              if (flag=true) {
+               document.write(i)   
               }    
             }
-             if (flag) {
-               document.write(i)
-             document.write('<br />')  
-              } 
-            
+             
+            document.write('<br />')
         }
 
        
